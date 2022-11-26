@@ -1,0 +1,5 @@
+print("Mad Libs")
+print("_________")
+print("Be careful not to vacuum the _____ when you clean under your bed")
+noun = input("Enter a noun: ")
+print(f"Be careful not to vacuum the {noun} when you clean under your bed")
