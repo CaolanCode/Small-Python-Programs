@@ -1,9 +1,8 @@
 from item import Item
 from phone import Phone
 
-phone1 = Phone("jscPhonev10", 500, 5, 1)
-print(phone1.calculate_total_price())
-phone2 = Phone("jscPhonev20", 700, 5)
+item1 = Item("MyItem", 250)
 
-print(Item.all)
-print(Phone.all)
+item1.__name = "Othername"
+
+print(item1.__name)
