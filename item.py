@@ -10,11 +10,19 @@ class Item:
         assert price >= 0, f"Price {price} is not greater than or equal to zero!"
         assert quantity >= 0, f"Quantity {quantity} is not greater than or equal to zero!"
         # Assign to self object
-        self.name = name
+        self.__name = name
         self.price = price
         self.quantity = quantity
         # actions to execute
         Item.all.append(self)
+
+    @property  # property decorator = read-only attribute
+    def name(self):
+        return self.__name
+
+    @name.setter
+    def name(self, value):
+        self.__name = value
 
     def calculate_total_price(self):
         return self.price * self.quantity
