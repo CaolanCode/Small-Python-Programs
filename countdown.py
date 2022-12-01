@@ -12,6 +12,6 @@ def countdown(t):
     print("Timer finished")
 
 
-t = int(input("Enter time in seconds"))
+t = int(input("Enter time in seconds: "))
 
 countdown(t)
